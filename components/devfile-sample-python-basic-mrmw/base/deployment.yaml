@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-python-basic-mrmw
     spec:
       containers:
-      - image: quay.io/redhat-appstudio-qe/test-images-protected:cLyBV-devfile-sample-python-basic-mrmw
+      - image: quay.io/redhat-appstudio-qe/test-images-protected@sha256:4219b4fd643a3053288118eadb03e94643b32ffd95b3e8101e27496c24900fe1
         name: my-python
         ports:
         - containerPort: 8081
