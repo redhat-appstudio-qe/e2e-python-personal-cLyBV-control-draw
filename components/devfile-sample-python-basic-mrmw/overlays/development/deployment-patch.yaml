@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-mrmw
+  namespace: e2e-demos-vukb-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images-protected@sha256:4219b4fd643a3053288118eadb03e94643b32ffd95b3e8101e27496c24900fe1
+        name: my-python
+        resources: {}
+status: {}
